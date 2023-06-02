@@ -57,12 +57,12 @@ class openning extends Phaser.Scene {
 
         this.time.delayedCall(5000, () => {
             this.cameras.main.fade(500, 0, 0, 0);
-            this.time.delayedCall(500, () => { this.scene.start("warnning") });
+            this.time.delayedCall(500, () => { this.scene.start("floor two level 2") });
         });
 
         this.input.on("pointerdown", () => {
             this.cameras.main.fade(500, 0, 0, 0);
-            this.time.delayedCall(500, () => { this.scene.start("warnning") });
+            this.time.delayedCall(500, () => { this.scene.start("floor two level 2") });
         });
     }
 }
