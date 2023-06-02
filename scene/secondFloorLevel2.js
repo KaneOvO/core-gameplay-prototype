@@ -17,6 +17,7 @@ class secondFloorLevel2 extends Base {
             .setFontSize(50)
             .setDepth(3)
             .setAlpha(0);
+            
         this.showEnemyHp = this.showMonsterHP(this.monsterHP);
 
         this.giantRage = false;
