@@ -3,12 +3,16 @@ class openning extends Phaser.Scene {
         super("openning");
     }
 
+    preload() {
+        
+    }
+
     create() {
+
+        game.sound.volume = saveData.volume;
 
         this.cameras.main.fadeIn(1000, 0, 0, 0);
         this.cameras.main.setBackgroundColor(0xf0f0f0);
-
-        loadSaveData();
 
         var cx = this.cameras.main.centerX;
         var cy = this.cameras.main.centerY;
@@ -57,12 +61,12 @@ class openning extends Phaser.Scene {
 
         this.time.delayedCall(5000, () => {
             this.cameras.main.fade(500, 0, 0, 0);
-            this.time.delayedCall(500, () => { this.scene.start("floor two level 2") });
+            this.time.delayedCall(500, () => { this.scene.start("warnning") });
         });
 
         this.input.on("pointerdown", () => {
             this.cameras.main.fade(500, 0, 0, 0);
-            this.time.delayedCall(500, () => { this.scene.start("floor two level 2") });
+            this.time.delayedCall(500, () => { this.scene.start("warnning") });
         });
     }
 }

@@ -5,7 +5,7 @@
         "hp": 5,
         "shield": false,
         "sword": 0
-        
     },
-    "elf": false
+    "elf": false,
+    "volume": 0.5
 }

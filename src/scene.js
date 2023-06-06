@@ -7,20 +7,16 @@ const game = new Phaser.Game({
         width: 1920,
         height: 1080
     },
-    physics: {
-        default: 'matter',
-        matter: {
-            gravity: {
-                y: 0
-            },
-            debug: true
-        }
-    },
-    ////scene: [baseBattle],
-    //scene: [secondFloorLevel3],
     scene: [
-        openning,
-        secondFloorLevel2,
+        debug_scene,
+        firstFloorLevel0,
+        firstFloorLevel1,
+        firstFloorLevel2,
+        firstFloorLevel3,
+        firstFloorLevel4,
+        firstFloorLevel5,
+        reborn,
+        credit
     ],
     backgroundColor: 0x000000,
     title: "Game",
